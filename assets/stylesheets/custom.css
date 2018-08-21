@@ -1,0 +1,546 @@
+body{
+    margin: 0px;
+    /* font-family: 'Open Sans Condensed', sans-serif !important; */
+    /* background-color: black !important; */
+    background-image: url(../images/backmusic.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*{
+  box-sizing: border-box;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+   
+}
+.row{
+    display: flex;
+}
+.row1{
+    flex-wrap: wrap;
+}
+.row2{
+    column-count: 2;
+}
+hr{
+    margin: 0px !important;
+}
+
+/* CONTAINER 1 */
+#container1 .container-fluid{
+    padding: 0px;
+}
+#container1 .navbar ul li{
+    background: transparent;
+    /* color: #3e3e3e; */
+    font-size: 14px;
+    font-weight: 600;
+    /* margin-left: 2%;
+    margin-left: 2%; */
+    text-transform: none;
+}
+#nav1{
+    min-width: 75%;
+    
+}
+#nav1 ul li a{
+    padding-right: 2% !important;
+}
+#container1 .navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 1.5em;
+    padding-right: 0.8em;
+
+}
+#nav2{
+    min-width: 14%;
+    margin-right: 0px !important;
+}
+#btn1{
+    border-radius: 100px;
+    /* border-top-left-radius: 30%; */
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #0AB85E;
+    color: white;
+    margin-left: 12%;
+    margin-top: 3.5% !important;
+}
+#btn1:hover{
+    background-color: #71C43F;
+}
+#container1 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: white !important;
+}
+#container1 .navbar-toggler {
+    background-color: grey !important; 
+    border: 1px solid white !important;
+}
+#btn1 a{
+    color: white !important;
+}
+/* CONTAINER2 */
+#container2{
+    /* background-color: #F8F9FA; */
+    height: 84px;
+    box-shadow: rgba(0,0,0,.03) 0 3px 0, rgba(0,0,0,.07) 0 1px 0;
+
+}
+#searchicon {
+    position: absolute;
+    top: 19%;
+    left: 30px;
+}
+#container2 .form-control{
+    position: relative;
+    width: 80%;
+    vertical-align: top;
+    background-color: transparent;
+    font-size: 16px;
+    padding: .7em 1em .7em 43px;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-shadow: inset 0 1px 1px 1px rgba(0,0,0,.07);
+    display: block;
+    line-height: 1.5;
+    margin: 0;
+    text-align: inherit;
+    text-shadow: none;
+    color: #3e3e3e;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: auto;
+    margin-top: 1%;
+    margin-right: 1% !important;
+}
+#container2  ::placeholder{
+    color: #CCCCCC;
+}
+#btn2{
+    text-align: center;
+    background-color: #0AB85E;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: .75em 1.5em;
+    text-transform: none;
+    border: 0;
+    border-radius: 70px;
+    width: 14%;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 1% !important;
+    margin-left: 1%;
+}
+#btn2:hover{
+    background-color: #71C43F;
+}
+#para{
+    margin-top: 1%;
+}
+#para abbr{
+    color: #CCCCCC;
+}
+
+@media(max-width: 1200px) {
+    #container2 form {
+        display: none;
+    }
+}
+@media(max-width: 1200px){
+    #container2{
+    height: 34px;;
+}}
+/* CONTAINER3 */
+#container3{
+    display: none;
+}
+@media(max-width: 1200px) {
+    #container3 .language {
+        display: none !important;
+    }}
+#container3 .language{
+    border-bottom: 1px solid white;
+    box-shadow: greenyellow 0 2px 0;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+
+}
+#container3 .language li{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 1.5%;
+}
+#container3 .language li a{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 1.5%;
+    color: white;
+    line-height: 1.4;
+    font-size: 12px;
+    padding: 13px 1px 12px 1px;
+}
+#lan1{
+    border-bottom: 1px solid greenyellow !important;
+    color: greenyellow !important;
+    cursor: default !important;
+    pointer-events: none;
+}
+#container3 .language li a:hover{
+    color: greenyellow;
+}
+
+/* AUDIO PLAYER */
+
+#audio {
+    display: none;
+    position: absolute;
+}
+
+#audioPlayer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 10;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 2px 80px;
+}
+#audioPlayer .col-lg-3 {
+    margin-top: 0.4%;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 26px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: white;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background:#0AB85E;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+ input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+#playPause i {
+    font-size: 2em;
+    /* color: #dd244e; */
+    color: white;
+}
+#stopSong i {
+    font-size: 2em;
+    /* color: #b5167d; */
+    color: white;
+}
+#nextSong i {
+        font-size: 2em;
+        /* color: #8319b1; */
+        color: white;
+}
+#previousSong i{
+font-size: 2em;
+/* color: #f0582f; */
+color: white;
+}
+#playPause{
+    background-color: transparent;
+}
+#stopSong{
+    background-color: transparent;
+}
+#nextSong{
+    background-color: transparent;
+}#previousSong{
+    background-color: transparent;
+}
+  /* CONTAINER4 */
+
+#songsleft .weekly{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: grey;
+    text-align: center;
+    margin-left: 10px; 
+    font-weight: 500; 
+}
+#songsleft .playall {
+    vertical-align: top;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 20px;
+}
+#sidebar2 .weekly3{
+padding: 10px 20px;
+font-size: 1.2em;
+color: grey;
+text-align: center;
+margin-left: 10px;
+font-weight: 500;
+}
+#sidebar2 .playall {
+    vertical-align: top;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 20px;
+}
+#centerelement .weekly2{
+    padding: 10px 20px;
+    font-size: 2.2em;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 400;
+}
+/* SONGS */
+#songs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+@media(max-width:1200px){
+    #songs{
+    margin-left:0%;
+}}
+#songs li{
+    padding: 1.5%;
+}
+#songs span{
+    display: block;
+    color: white;
+    padding: 5%;
+}
+
+#songs li .playIcon,#playList li .playIcon {
+    position: relative;
+    top: 1%;
+    left: 40%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://blog.autocase.com/wp-content/uploads/2017/08/video-play-xxl.png");
+    background-size: 100% 100%;
+    transform: translateY(-550%);
+}
+#playList li .playIcon {
+    left: 30px;
+}
+#songs1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3.3%
+}
+@media(max-width:1200px){
+    #songs1{
+    margin-left:0%;
+}}
+#songs1 li{
+    padding: 1.5%;
+}
+#songs1 span{
+    display: block;
+    color: black;
+    padding: 5%;
+}
+
+#songs1 li .playIcon,#playList li .playIcon {
+    position: relative;
+    top: 1%;
+    left: 40%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://blog.autocase.com/wp-content/uploads/2017/08/video-play-xxl.png");
+    background-size: 100% 100%;
+    transform: translateY(-550%);
+}
+#sidebar11 .aside1{
+   background-color: white;
+   border-radius: 20px;
+}
+#sidebar11 .aside1 img{
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+#sidebar11 .aside1 img:hover{
+    cursor: pointer;
+    transform: rotateZ(360deg);
+    transition: 1s linear;
+}
+@media (max-width:1200px){
+    #songs1 li{
+        padding: 0.45%;
+        margin-left: 1%;
+      
+    }
+}
+
+@media (max-width:1200px){
+    #songs li{
+        padding: 0.2%;
+       margin-left: 1%;
+    }
+}
+
+@media (max-width:1200px){
+    #songsleft{ 
+       margin-left: 3%;
+    }
+}
+@media (max-width:1200px){
+    #center{ 
+       margin-left: 4%;
+    }
+}
+@media (max-width:1200px){
+    #right{ 
+       margin-left: 3.5%;
+    }
+}
+
+#songs li img{
+    border: 1px solid white;
+}
+
+#songs3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3.35%;
+}
+@media(max-width:1200px){
+    #songs3{
+    margin-left:0%;
+}}
+#songs3 li{
+    padding: 1.5%;
+}
+#songs3 span{
+    display: block;
+    color: black;
+    padding: 5%;
+}
+
+#songs3 li .playIcon,#playList li .playIcon {
+    position: relative;
+    top: 1%;
+    left: 40%;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://blog.autocase.com/wp-content/uploads/2017/08/video-play-xxl.png");
+    background-size: 100% 100%;
+    transform: translateY(-550%);
+}
+#sidebar2 .aside2{
+   background-color: white;
+   border-radius: 20px;
+}
+#sidebar2 .aside2 img{
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+#sidebar2 .aside2 img:hover{
+    cursor: pointer;
+    transform: scale(0.9,0.9);
+    transition: 1s linear;
+}
+#songs li img:hover{
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    transition: 1s linear;
+
+}
+@media (max-width:1200px){
+    #songs3 li{
+        padding: 0.4%;
+        margin-left: 1%;
+      
+    }
+}
+
+/* SIDEBAR */
+#sidebar11{
+    position: sticky;
+    top: 0px;
+}
+#sidebar2{
+    position: sticky;
+    top: 0px;
+}
+
+/* FOOTER */
+    #footer{
+        background-color: white;
+        color:black;
+        min-height: 55px;
+        margin-top: 2%;
+    }
+    #footer p{
+        margin-top: 1.5%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    #name{
+        color: #28A745;
+        padding-left: 0.5%; 
+    }
