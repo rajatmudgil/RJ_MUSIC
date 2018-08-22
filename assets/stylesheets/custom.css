@@ -116,6 +116,14 @@ hr{
     top: 19%;
     left: 30px;
 }
+
+@media(min-width: 1201px) {
+    #searchicon {
+        position: absolute;
+        top: 18.5%;
+        left: 30px;
+    }
+}
 #container2 .form-control{
     position: relative;
     width: 80%;
@@ -363,6 +371,24 @@ font-weight: 500;
     #songs{
     margin-left:0%;
 }}
+
+@media(min-width:1201px){
+    #songs{
+        margin-left: 1%;
+    }
+}
+
+@media(min-width:1201px){
+    #songs li{
+        padding: 0.1% !important;
+    }
+}
+
+@media(min-width:1201px){
+    #songs li img{
+      transform: scale(0.96,0.96);
+    }
+}
 #songs li{
     padding: 1.5%;
 }
@@ -471,6 +497,24 @@ font-weight: 500;
     border: 1px solid white;
 }
 
+@media(min-width:1201px){
+    #songs1{
+        margin-left: 0.8%;
+    }
+}
+
+@media(min-width:1201px){
+    #songs1 li{
+        padding: 0.1%;
+    }
+}
+
+@media(min-width:1201px){
+    #songs1 li img{
+        transform: scale(0.9,0.9);
+    }
+}
+
 #songs3{
     display: flex;
     flex-wrap: wrap;
@@ -528,6 +572,24 @@ font-weight: 500;
         padding: 0.4%;
         margin-left: 1%;
       
+    }
+}
+
+@media(min-width:1201px){
+    #songs3{
+        margin-left: 0.1%;
+    }
+}
+
+@media(min-width:1201px){
+    #songs3 li{
+        padding: 0.2% !important;
+    }
+}
+
+@media(min-width:1201px){
+    #songs3 li img{
+      transform: scale(0.9,0.9);
     }
 }
 
