@@ -117,7 +117,7 @@ hr{
     left: 30px;
 }
 
-@media(min-width: 1201px) {
+@media(min-width: 1980px) {
     #searchicon {
         position: absolute;
         top: 18.5%;
@@ -372,19 +372,19 @@ font-weight: 500;
     margin-left:0%;
 }}
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs{
         margin-left: 1%;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs li{
         padding: 0.1% !important;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs li img{
       transform: scale(0.96,0.96);
     }
@@ -497,19 +497,19 @@ font-weight: 500;
     border: 1px solid white;
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs1{
         margin-left: 0.8%;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs1 li{
         padding: 0.1%;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs1 li img{
         transform: scale(0.9,0.9);
     }
@@ -575,19 +575,19 @@ font-weight: 500;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs3{
         margin-left: 0.1%;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs3 li{
         padding: 0.2% !important;
     }
 }
 
-@media(min-width:1201px){
+@media(min-width:1980px){
     #songs3 li img{
       transform: scale(0.9,0.9);
     }
