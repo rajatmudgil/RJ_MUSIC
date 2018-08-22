@@ -237,11 +237,11 @@ hr{
     z-index: 10;
     left: 0px;
     background-color: rgba(0,0,0,0.7);
-    padding: 2px 80px;
+    padding: 1px 70px;
 }
-@media(max-width:1200px){
+@media(min-width:1200px){
     #audioPlayer{
-        padding: 1px 70px;
+        padding: 2px 80px;
     }
 }
 #audioPlayer .col-lg-3 {
