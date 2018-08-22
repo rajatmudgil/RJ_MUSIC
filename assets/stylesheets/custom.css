@@ -535,10 +535,10 @@ font-weight: 500;
         transition: 1s linear;
     }
     #songs1 span{
-        margin-left: 8%;
+        margin-left: 8% !important;
     }
     #songs1 .btn-success{
-        margin-left: 5%;
+        margin-left: 5% !important;
     }
 }
 
@@ -607,10 +607,10 @@ font-weight: 500;
         margin-left: -1.5%;
     }
     #songs3 span{
-        margin-left: 8%;
+        margin-left: 8% !important;
     }
     #songs3 .btn-success{
-        margin-left: 5%;
+        margin-left: 5% !important;
     }
 }
 
