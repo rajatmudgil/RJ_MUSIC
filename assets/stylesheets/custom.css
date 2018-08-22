@@ -506,13 +506,13 @@ font-weight: 500;
 
 @media(max-width:1400px){
     #songs1{
-        margin-left: -0.8%;
+        margin-left: -1%;
     }
 }
 
 @media(max-width:1400px){
     #songs1 li{
-        padding: 0.1%;
+        padding: 0%;
     }
 }
 
