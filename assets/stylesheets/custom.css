@@ -116,6 +116,13 @@ hr{
     top: 19%;
     left: 30px;
 }
+@media(max-width:1400px){
+    #searchicon {
+        position: absolute;
+        top: 23%;
+        left: 30px;
+    }
+}
 
 @media(min-width: 1224px) {
     #searchicon {
@@ -499,7 +506,7 @@ font-weight: 500;
 
 @media(max-width:1400px){
     #songs1{
-        margin-left: 0%;
+        margin-left: -0.8%;
     }
 }
 
