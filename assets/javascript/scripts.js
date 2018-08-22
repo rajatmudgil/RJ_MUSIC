@@ -1,3 +1,11 @@
+
+//   (ALL RIGHTS RESERVED) 
+
+// CREATED AND DESIGNED BY -:
+
+//      RAJAT (+91 9899446742)
+//      rajatmudgil24@gmail.com 
+
 window.addEventListener("load", initPlayer);
 
 var audio;
