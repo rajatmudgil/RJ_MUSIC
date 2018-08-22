@@ -372,19 +372,19 @@ font-weight: 500;
     margin-left:0%;
 }}
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs{
         margin-left: 1%;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs li{
         padding: 0.1% !important;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs li img{
       transform: scale(0.96,0.96);
     }
@@ -497,19 +497,19 @@ font-weight: 500;
     border: 1px solid white;
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs1{
         margin-left: 0.2%;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs1 li{
         padding: 0.1%;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs1 li img{
         transform: scale(0.9,0.9);
     }
@@ -575,19 +575,19 @@ font-weight: 500;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs3{
-        margin-left: 0%;
+        margin-left: -0.5%;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs3 li{
         padding: 0.2% !important;
     }
 }
 
-@media(max-width:1400px){
+@media(min-width:1300px){
     #songs3 li img{
       transform: scale(0.9,0.9);
     }
