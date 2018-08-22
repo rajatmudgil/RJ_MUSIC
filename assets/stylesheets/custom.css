@@ -118,9 +118,7 @@ hr{
 }
 @media(max-width:1400px){
     #searchicon {
-        position: absolute;
-        top: 23%;
-        left: 30px;
+        display: none;
     }
 }
 
@@ -374,6 +372,17 @@ font-weight: 500;
     flex-wrap: wrap;
     margin-left: 3%;
 }
+#songs .btn-success:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}
+#songs1 .btn-success:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}#songs3 .btn-success:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}
 @media(max-width:1200px){
     #songs{
     margin-left:0%;
@@ -520,6 +529,17 @@ font-weight: 500;
     #songs1 li img{
         transform: scale(0.9,0.9);
     }
+    #sidebar11 .aside1 img:hover{
+        cursor: pointer;
+        transform: rotateZ(360deg) !important;
+        transition: 1s linear;
+    }
+    #songs1 span{
+        margin-left: 8%;
+    }
+    #songs1 .btn-success{
+        margin-left: 5%;
+    }
 }
 
 #songs3{
@@ -586,6 +606,12 @@ font-weight: 500;
     #songs3{
         margin-left: -1.5%;
     }
+    #songs3 span{
+        margin-left: 8%;
+    }
+    #songs3 .btn-success{
+        margin-left: 5%;
+    }
 }
 
 @media(max-width:1400px){
@@ -598,6 +624,10 @@ font-weight: 500;
     #songs3 li img{
       transform: scale(0.9,0.9);
     }
+    #songs3 li img:hover{
+        transform: scale(0.8,0.8);
+        transition: 1s linear !important;
+      }
 }
 
 /* SIDEBAR */
