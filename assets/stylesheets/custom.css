@@ -230,6 +230,11 @@ hr{
     background-color: rgba(0,0,0,0.7);
     padding: 2px 80px;
 }
+@media(max-width:1200px){
+    #audioPlayer{
+        padding: 1px 70px;
+    }
+}
 #audioPlayer .col-lg-3 {
     margin-top: 0.4%;
 }
