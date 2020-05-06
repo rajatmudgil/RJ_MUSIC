@@ -58,7 +58,7 @@ hr{
 }
 #container1 .navbar ul li{
     background: transparent;
-    /* color: #3e3e3e; */
+    color: white !important;
     font-size: 14px;
     font-weight: 600;
     /* margin-left: 2%;
@@ -100,7 +100,7 @@ hr{
     /* border-top-left-radius: 30%; */
     font-size: 12px;
     font-weight: bold;
-    background-color: #0AB85E;
+    background-color: black;
     color: white;
     margin-left: 12%;
     margin-top: 1.5% !important;
@@ -439,7 +439,7 @@ font-weight: 500;
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    background-image: url("https://png.icons8.com/ios/2x/play-button-circled-filled.png");
+    background-image: url("https://i1.pngguru.com/preview/685/835/603/metrostation-play-icon-png-clipart.jpg");
     background-size: 100% 100%;
     transform: translateY(-550%);
 }
@@ -475,7 +475,7 @@ font-weight: 500;
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    background-image: url("https://png.icons8.com/ios/2x/play-button-circled-filled.png");
+    background-image: url("https://i1.pngguru.com/preview/685/835/603/metrostation-play-icon-png-clipart.jpg");
     background-size: 100% 100%;
     transform: translateY(-550%);
 }
@@ -585,7 +585,7 @@ font-weight: 500;
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    background-image: url("https://png.icons8.com/ios/2x/play-button-circled-filled.png");
+    background-image: url("https://i1.pngguru.com/preview/685/835/603/metrostation-play-icon-png-clipart.jpg");
     background-size: 100% 100%;
     transform: translateY(-550%);
 }
@@ -670,4 +670,4 @@ font-weight: 500;
     #name{
         color: #28A745;
         padding-left: 0.5%; 
-    }
+ }
