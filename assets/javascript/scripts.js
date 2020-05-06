@@ -3,16 +3,20 @@
 
 // CREATED AND DESIGNED BY -:
 
-//      RAJAT (+91 9899446742)
-//      rajatmudgil24@gmail.com 
+//      TANVI CHAUDHARY (+91 9717164641)
+//      tanvicy1234@gmail.com 
 
 window.addEventListener("load", initPlayer);
+window.addEventListener("keypress", search);
+window.addEventListener("keyup", search);
+window.addEventListener("keydown", search);
+window.addEventListener("change", search);
 
 var audio;
 var togglePlay = false;
 var togglePlayButton;
 var slider;
-
+var releases;
 
 function initPlayer(){
     audio = document.getElementById("audio");
@@ -56,6 +60,7 @@ function initPlayer(){
         ul.appendChild(li);
         btn.addEventListener("click", addToPlaylist);
     }
+    ul=releases;
 
 //for weekly playlist
 
@@ -118,6 +123,8 @@ function initPlayer(){
 
 }
 
+// SAVE PLAYLIST AFTER RELOAD 
+
 function savePlayList(){
     if(window.localStorage) {
         var json = JSON.stringify(obj.playList);
@@ -139,14 +146,14 @@ function loadPlayList() {
     showPlayList();
 }
 
-function searchSong() {
-    var toSearch = event.srcElement.value;
-    if(toSearch == "") {
-        loadPlayList();
-    }
-    obj.searchSong(toSearch);
-    showPlayList();
-}
+// function searchSong() {
+//     var toSearch = event.srcElement.value;
+//     if(toSearch == "") {
+//         loadPlayList();
+//     }
+//     obj.searchSong(toSearch);
+//     showPlayList();
+// }
 
 function setSongName(){
     // console.log(event.srcElement.parentElement.childNodes[0].innerText);
@@ -260,7 +267,17 @@ function nextSong(){
 }
 
 function previousSong(){
-
+    var songId = audio.title;
+    var n_song = parseInt(songId)-1;
+    var songName;
+    console.log(n_song);
+    for(var i = 0; i < songsArray.length; i++){
+        if(songsArray[i].songId == n_song) {
+            songName = songsArray[i].songName;
+            console.log(n_song, songName);
+        }
+    }
+    playSong(songName);
 }
 
 function toggleSong(){
@@ -342,4 +359,66 @@ function showPlayList(){
         ul.appendChild(li);
         btn.addEventListener("click", deleteSong);
     })   
+}
+
+
+
+//for search
+
+
+function search(){
+    console.log('length of your search', document.getElementById('searchSong').value.length);
+    if(document.getElementById('searchSong').value.length!==0){
+    console.log('search called..');
+    console.log('event value', document.getElementById('searchSong').value);
+    let songs = [...songsArray.map(song=>(song)),...songsArray1.map(song=>(song)),...songsArray2.map(song=>(song))];
+    console.log('songs', songs);
+    let searchedSongs=[];
+    songs.forEach(song=>{
+        if(song.songName.includes( document.getElementById('searchSong').value)){
+            searchedSongs.push( song);
+        }
+    });
+    console.log('filtered songs', searchedSongs);
+    document.querySelector('#songsleft').style.display='none'; 
+    document.querySelector('#right').style.display='none'; 
+    var new_ul=document.createElement("ul");
+    document.getElementById('songs').remove();
+    new_ul.setAttribute("id","songs");
+    document.getElementById('centerelement').appendChild(new_ul);
+    for(var i = 0; i < searchedSongs.length; i++) {
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        var img = document.createElement("img");
+        var playIcon = document.createElement("button");
+        var btn = document.createElement("button");
+        span.innerHTML = searchedSongs[i].songName;
+        span.setAttribute('title', searchedSongs[i].songId);
+        img.setAttribute('src', searchedSongs[i].songImage);
+        img.className = "cover";
+        // btn.innerHTML = '<i class="fas fa-plus"></i>';
+        btn.innerHTML = "Add to playlist";
+        btn.className = "btn btn-success playListBtn d-block";
+        playIcon.className = 'playIcon';
+        // playIcon.innerHTML = '<i class="fas fa-play"></i>';
+        // li.className = 'list-group-item';
+        li.appendChild(img);
+        li.appendChild(span);
+        li.appendChild(btn);
+        li.appendChild(playIcon);
+        // span.addEventListener("click", setSongName);
+        playIcon.addEventListener("click", setSongName);
+        new_ul
+        .appendChild(li);
+        btn.addEventListener("click", addToPlaylist);
+    }
+        console.log('ul finally', new_ul);
+}
+else{
+    document.querySelector('#songsleft').style.display='block'; 
+    document.querySelector('#right').style.display='block'; 
+    console.log('init called again');
+    initPlayer();
+}
+
 }

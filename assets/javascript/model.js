@@ -35,7 +35,7 @@ var obj = {
         
     },
 
-    searchSong : function(songName) {
+    $searchSong:function(songName) {
         this.playList = this.playList.filter(function(obj){
             return obj.name.includes(songName);
         })
